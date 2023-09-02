@@ -1,10 +1,10 @@
 {
-  "name": "lovelace-boilerplate-card",
+  "name": "expandable-card",
   "version": "1.0.0",
   "description": "",
   "type": "module",
   "scripts": {
-    "start": "rollup -c rollup.config.dev.js --watch",
+    "start": "rollup -c rollup.config.dev.mjs --watch --bundleConfigAsCjs",
     "build": "npm run lint && npm run rollup",
     "lint": "eslint src/*.ts",
     "rollup": "rollup -c --bundleConfigAsCjs"

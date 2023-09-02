@@ -1,5 +1,5 @@
 import { noChange } from 'lit';
-import { AttributePart, directive, Directive, DirectiveParameters } from 'lit/directive';
+import { AttributePart, directive, Directive, DirectiveParameters } from 'lit/async-directive.js';
 
 import { ActionHandlerDetail, ActionHandlerOptions } from 'custom-card-helpers/dist/types';
 import { fireEvent } from 'custom-card-helpers';
@@ -162,16 +162,15 @@ class ActionHandler extends HTMLElement implements ActionHandlerInterface {
   }
 }
 
-// TODO You need to replace all instances of "action-handler-boilerplate" with "action-handler-<your card name>"
-customElements.define('action-handler', ActionHandler);
+customElements.define('action-handler-expandable-card', ActionHandler);
 
 const getActionHandler = (): ActionHandler => {
   const body = document.body;
-  if (body.querySelector('action-handler-boilerplate')) {
-    return body.querySelector('action-handler-boilerplate') as ActionHandler;
+  if (body.querySelector('action-handler-expandable-card')) {
+    return body.querySelector('action-handler-expandable-card') as ActionHandler;
   }
 
-  const actionhandler = document.createElement('action-handler-boilerplate');
+  const actionhandler = document.createElement('action-handler-expandable-card');
   body.appendChild(actionhandler);
 
   return actionhandler as ActionHandler;

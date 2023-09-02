@@ -1,4 +1,4 @@
-import{S as e,_ as t,a as i,s as d,b as o,T as n,x as r,i as a,A as l,c,n as s}from"./boilerplate-card-402760ac.js";import{property as m,state as p,customElement as h}from"lit/decorators";import"lit/directive";
+import{S as e,_ as t,a as i,s as d,b as o,T as n,x as r,i as a,A as l,c,n as s}from"./boilerplate-card-a2abb957.js";import{property as m,state as p,customElement as h}from"lit/decorators";import"lit/directive";
 /**
  * @license
  * Copyright 2021 Google LLC
@@ -940,4 +940,4 @@ const li=a`.mdc-floating-label{-moz-osx-font-smoothing:grayscale;-webkit-font-sm
     mwc-switch {
       --mdc-theme-secondary: var(--switch-checked-color);
     }
-  `,o([m({attribute:!1})],si.prototype,"hass",void 0),o([p()],si.prototype,"_config",void 0),o([p()],si.prototype,"_helpers",void 0),si=o([h("boilerplate-card-editor")],si);export{si as BoilerplateCardEditor};
+  `,o([m({attribute:!1})],si.prototype,"hass",void 0),o([p()],si.prototype,"_config",void 0),o([p()],si.prototype,"_helpers",void 0),si=o([h("expandable-card-editor")],si);export{si as ExpandableCardEditor};
